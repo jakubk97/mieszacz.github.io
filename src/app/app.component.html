@@ -1,0 +1,27 @@
+<div class="content">
+  <div class="inner-content" style="height: 10vh;width: 50vh;">
+    <span class="wrap"><h1>
+      {{wartosc.nazwa}}
+    </h1>
+    </span>
+
+  </div>
+  <div class="inner-content" style="height: 20vh;width: 50vh;">
+    <span class="wrap"><h1>
+      {{wartosc.opiekun}}
+    </h1>
+    </span>
+
+  </div>
+  <div>
+    <br><br><br><br><br>
+    <button pButton type="button" (click)="losujWartosc()" label="LOSUJ"
+      class="p-element p-ripple  p-button-rounded p-button-secondary p-component"></button>
+
+    <button pButton type="button" (click)="reset()" icon="pi pi-refresh"
+      class="p-element p-ripple  p-button-rounded p-button-secondary p-component"></button>
+  </div>
+
+</div>
+
+

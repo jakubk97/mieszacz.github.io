@@ -1,0 +1,54 @@
+// @property --num {
+//     syntax: "<integer>";
+//     initial-value: 13 * 26 * 26 + 9 * 26 + 5 ; //mieszamy
+//     inherits: false;
+//   }
+
+//   div {
+//     transition: --num 0.25s;
+//     counter-set: num var(--num);
+//     font: 800 40px system-ui;
+//     padding: 2rem;
+//   }
+//   div::after {
+//     content: counter(num, lower-alpha);
+//   }
+//   div:hover {
+//     --num: #{25 * 26 * 26 + 5 * 26 + 19}; // albo nie
+//   }
+
+.inner-content{
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+button {
+  margin: 11px;
+}
+
+span.wrap {
+  white-space: normal;
+}
+
+div {
+  text-align: center;
+}
+
+h1{
+  font-family: cursive;
+}
+
+
+
+
