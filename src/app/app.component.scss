@@ -1,23 +1,4 @@
-// @property --num {
-//     syntax: "<integer>";
-//     initial-value: 13 * 26 * 26 + 9 * 26 + 5 ; //mieszamy
-//     inherits: false;
-//   }
-
-//   div {
-//     transition: --num 0.25s;
-//     counter-set: num var(--num);
-//     font: 800 40px system-ui;
-//     padding: 2rem;
-//   }
-//   div::after {
-//     content: counter(num, lower-alpha);
-//   }
-//   div:hover {
-//     --num: #{25 * 26 * 26 + 5 * 26 + 19}; // albo nie
-//   }
-
-.inner-content{
+.inner-content {
   position: absolute;
   left: 50%;
   top: 15%;
@@ -45,10 +26,103 @@ div {
   text-align: center;
 }
 
-h1{
+h1 {
   font-family: cursive;
 }
 
+// /*  SECTIONS  */
+// .section {
+//   clear: both;
+//   padding: 0px;
+//   margin: 0px;
+// }
 
+// /*  COLUMN SETUP  */
+// .col {
+//   display: block;
+//   float: left;
+//   margin: 1% 0 1% 1.6%;
+// }
+// .col:first-child {
+//   margin-left: 0;
+// }
 
+// /*  GROUPING  */
+// .group:before,
+// .group:after {
+//   content: "";
+//   display: table;
+// }
+// .group:after {
+//   clear: both;
+// }
+// .group {
+//   zoom: 1; /* For IE 6/7 */
+// }
+// /*  GRID OF THREE  */
+// .span_3_of_3 {
+//   width: 100%;
+// }
+// .span_2_of_3 {
+//   width: 66.13%;
+// }
+// .span_1_of_3 {
+//   width: 32.26%;
+// }
 
+// /*  GO FULL WIDTH BELOW 480 PIXELS */
+// @media only screen and (max-width: 480px) {
+//   .col {
+//     margin: 1% 0 1% 0%;
+//   }
+//   .span_3_of_3,
+//   .span_2_of_3,
+//   .span_1_of_3 {
+//     width: 100%;
+//   }
+// }
+
+// .span_1_of_3:nth-child(3n + 1) {
+//   clear: both;
+//   margin-left: 0;
+// }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "a n1 c"
+    "a n2 c"
+    "a n3 c";
+}
+
+.n3 {
+  grid-area: n3;
+  height: 15vh;
+}
+
+.n1 {
+  grid-area: n1;
+  height: 10vh;
+  width: max-content;
+}
+
+.n2 {
+  grid-area: n2;
+  height: 15vh;
+}
+
+.a {
+  grid-area: a;
+}
+
+.c {
+  grid-area: c;
+}
