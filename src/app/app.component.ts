@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
     { id: 3, nazwa: 'CLUIID, EPIBAZA', opiekun: 'Zbyszek Szot' },
     { id: 4, nazwa: 'WORTAL PSZ', opiekun: 'Rafał Grzelec' },
     { id: 5, nazwa: 'KDR', opiekun: 'Staszek Sobas' },
-    { id: 6, nazwa: 'RZ', opiekun: 'Kasia Sobas' },
+    { id: 6, nazwa: 'RZ', opiekun: 'Kasia Frank' },
     { id: 5, nazwa: 'CITY OF REYKJAVIK, BROKER SI PSZ', opiekun: 'Michał Tęcza' }
   ]
 
