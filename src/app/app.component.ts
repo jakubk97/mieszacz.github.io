@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
 
     this.wartosc = this.PROJEKTY[number];
     this.uzyte.push(number);
-    
+
   }
 
   reset() {
