@@ -34,7 +34,8 @@ export class AppComponent implements OnInit {
     { id: 4, nazwa: 'WORTAL PSZ', opiekun: 'Rafał Grzelec' },
     { id: 5, nazwa: 'KDR, EESSI', opiekun: 'Staszek Sobas' },
     { id: 6, nazwa: 'RZ', opiekun: 'Kasia Frank' },
-    { id: 7, nazwa: 'CITY OF REYKJAVIK, BROKER SI PSZ', opiekun: 'Michał Tęcza' }
+    { id: 7, nazwa: 'CITY OF REYKJAVIK, BROKER SI PSZ', opiekun: 'Michał Tęcza' },
+    { id: 8, nazwa: 'SOF', opiekun: 'Angelika Świacka' }
   ]
 
   uzyte: number[] = [];
