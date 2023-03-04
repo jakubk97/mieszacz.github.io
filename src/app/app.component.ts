@@ -2,15 +2,17 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class Projekt {
-  constructor(id: number, nazwa: string, opiekun: string) {
+  constructor(id: number, nazwa: string, opiekun: string, media: string|null) {
     this.id = id;
     this.nazwa = nazwa;
     this.opiekun = opiekun;
+    this.media = media;
   }
 
   public id: number;
   public nazwa: string;
   public opiekun: string;
+  public media: string|null;
 
 }
 
@@ -24,25 +26,25 @@ export class AppComponent implements OnInit {
 
   title = 'mieszacz';
 
-  wartosc: any;
+  wartoscWyswietlana!: Projekt;
 
   PROJEKTY: Projekt[] = [
-    { id: 0, nazwa: 'SRB, OSAT, PEF, GIS', opiekun: 'Kuba Plachta' },
-    { id: 1, nazwa: 'PIU-EMP@TIA', opiekun: 'Kuba Karmański' },
-    { id: 2, nazwa: 'CSIZS, ZDM', opiekun: 'Przemek Kubisa' },
-    { id: 3, nazwa: 'CLUIID, ALK(ePromotor)', opiekun: 'Zbyszek Szot' },
-    { id: 4, nazwa: 'WORTAL PSZ', opiekun: 'Rafał Grzelec' },
-    { id: 5, nazwa: 'KDR, EESSI', opiekun: 'Staszek Sobas' },
-    { id: 6, nazwa: 'RZ', opiekun: 'Kasia Frank' },
-    { id: 7, nazwa: 'CITY OF REYKJAVIK, BROKER SI PSZ', opiekun: 'Michał Tęcza' },
-    { id: 8, nazwa: 'SOF', opiekun: 'Angelika Świacka' }
+    { id: 0, nazwa: 'SRB, OSAT, PEF, GIS', opiekun: 'Kuba Plachta', media: null },
+    { id: 1, nazwa: 'PIU-EMP@TIA', opiekun: 'Kuba Karmański', media: null },
+    { id: 2, nazwa: 'CSIZS, ZDM', opiekun: 'Przemek Kubisa', media: null },
+    { id: 3, nazwa: 'CLUIID, ALK(ePromotor)', opiekun: 'Zbyszek Szot', media: null },
+    { id: 4, nazwa: 'WORTAL PSZ', opiekun: 'Rafał Grzelec', media: null },
+    { id: 5, nazwa: 'KDR, EESSI', opiekun: 'Staszek Sobas', media: null },
+    { id: 6, nazwa: 'RZ', opiekun: 'Kasia Frank', media: null },
+    { id: 7, nazwa: 'CITY OF REYKJAVIK, BROKER SI PSZ', opiekun: 'Michał Tęcza', media: null },
+    { id: 8, nazwa: 'SOF', opiekun: 'Angelika Świacka', media: null }
   ]
 
   uzyte: number[] = [];
   index: number = 0;
 
   ngOnInit(): void {
-    this.wartosc = new Projekt(0, 'NA DRESZCZYK EMOCJI', 'PRZYGOTUJCIE SIĘ');
+    this.wartoscWyswietlana = new Projekt(0, 'NA DRESZCZYK EMOCJI', 'PRZYGOTUJCIE SIĘ', 'https://media.tenor.com/XYlNF4wF_9cAAAAd/here-we.gif');
   }
 
   losujWartosci() {
@@ -53,7 +55,7 @@ export class AppComponent implements OnInit {
       }
       this.uzyte.push(number);
     }
-    this.PROJEKTY.push(new Projekt(this.PROJEKTY.length-1, 'WSZYSTKO OMÓWIONE', 'ZAPRASZAMY ZA TYDZIEŃ'));
+    this.PROJEKTY.push(new Projekt(this.PROJEKTY.length-1, 'WSZYSTKO OMÓWIONE', 'ZAPRASZAMY ZA TYDZIEŃ', 'https://media2.giphy.com/media/ZfK4cXKJTTay1Ava29/200w.gif?cid=6c09b952wmq42fjytn2kq9rh1h56f1et40l37jfrxp6hljfy&rid=200w.gif&ct=g'));
     this.uzyte.push(this.PROJEKTY.length-1);
   }
 
@@ -62,27 +64,27 @@ export class AppComponent implements OnInit {
       return;
     }
     this.index--;
-    this.wartosc = this.PROJEKTY[this.uzyte[this.index]];
+    this.wartoscWyswietlana = this.PROJEKTY[this.uzyte[this.index]];
   }
 
   nextValue() {
     if (this.uzyte.length == 0) {
       this.losujWartosci();
-      this.wartosc = this.PROJEKTY[this.uzyte[this.index]];
+      this.wartoscWyswietlana = this.PROJEKTY[this.uzyte[this.index]];
     }
     else if(this.index === this.uzyte.length-1){
-      this.wartosc = this.PROJEKTY[this.uzyte[this.index]];
+      this.wartoscWyswietlana = this.PROJEKTY[this.uzyte[this.index]];
       return;
     }
     else{
       this.index++;
-      this.wartosc = this.PROJEKTY[this.uzyte[this.index]];
+      this.wartoscWyswietlana = this.PROJEKTY[this.uzyte[this.index]];
     }
   }
 
   reset() {
     this.uzyte = [];
-    this.wartosc = new Projekt(0, '', '');
+    this.wartoscWyswietlana = new Projekt(0, '', '', null);
     this.index = 0;
   }
 
