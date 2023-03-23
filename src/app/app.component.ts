@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
   index: number = 0;
 
   ngOnInit(): void {
-    this.wartoscWyswietlana = new Projekt(0, 'NA DRESZCZYK EMOCJI', 'PRZYGOTUJCIE SIĘ', 'https://media.tenor.com/XYlNF4wF_9cAAAAd/here-we.gif');
+    this.wartoscWyswietlana = new Projekt(0, 'NA DRESZCZYK EMOCJI', 'PRZYGOTUJCIE SIĘ', 'https://i.imgflip.com/7fm23n.jpg');
   }
 
   losujWartosci() {
@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
       }
       this.uzyte.push(number);
     }
-    this.PROJEKTY.push(new Projekt(this.PROJEKTY.length-1, 'WSZYSTKO OMÓWIONE', 'ZAPRASZAMY ZA TYDZIEŃ', 'https://media2.giphy.com/media/ZfK4cXKJTTay1Ava29/200w.gif?cid=6c09b952wmq42fjytn2kq9rh1h56f1et40l37jfrxp6hljfy&rid=200w.gif&ct=g'));
+    this.PROJEKTY.push(new Projekt(this.PROJEKTY.length-1, 'WSZYSTKO OMÓWIONE', 'ZAPRASZAMY ZA TYDZIEŃ', 'https://i.pinimg.com/originals/b9/0a/79/b90a79b4c361d079144597d0bcdd61de.jpg'));
     this.uzyte.push(this.PROJEKTY.length-1);
   }
 
