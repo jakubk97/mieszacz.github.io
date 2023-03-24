@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
   PROJEKTY: Projekt[] = [
     { id: 0, nazwa: 'SRB, OSAT, PEF, GIS', opiekun: 'Kuba Plachta', media: null },
     { id: 1, nazwa: 'PIU-EMP@TIA', opiekun: 'Kuba Karmański', media: null },
-    { id: 2, nazwa: 'CSIZS, ZDM', opiekun: 'Przemek Kubisa', media: null },
+    { id: 2, nazwa: 'CSIZS, WUZETEM', opiekun: 'Przemek Kubisa', media: null },
     { id: 3, nazwa: 'CLUIID, ALK(ePromotor)', opiekun: 'Zbyszek Szot', media: null },
     { id: 4, nazwa: 'WORTAL PSZ', opiekun: 'Rafał Grzelec', media: null },
     { id: 5, nazwa: 'KDR, EESSI', opiekun: 'Staszek Sobas', media: null },
