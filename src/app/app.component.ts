@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
   index: number = 0;
 
   ngOnInit(): void {
-    this.wartoscWyswietlana = new Projekt(0, 'NA DRESZCZYK EMOCJI', 'PRZYGOTUJCIE SIĘ', 'https://media.tenor.com/TD62aZcTr7wAAAAC/mr-bean-realization.gif');
+    this.wartoscWyswietlana = new Projekt(0, 'NA DRESZCZYK EMOCJI', 'PRZYGOTUJCIE SIĘ', null);
   }
 
   losujWartosci() {
@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
       }
       this.uzyte.push(number);
     }
-    this.PROJEKTY.push(new Projekt(this.PROJEKTY.length-1, 'WSZYSTKO OMÓWIONE', 'ZAPRASZAMY ZA TYDZIEŃ', 'https://media.tenor.com/bGgv8ew9uNAAAAAC/mr-bean.gif'));
+    this.PROJEKTY.push(new Projekt(this.PROJEKTY.length-1, 'WSZYSTKO OMÓWIONE', 'ZAPRASZAMY ZA TYDZIEŃ', null));
     this.uzyte.push(this.PROJEKTY.length-1);
   }
 
