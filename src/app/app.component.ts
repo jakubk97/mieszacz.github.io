@@ -32,12 +32,12 @@ export class AppComponent implements OnInit {
     { id: 0, nazwa: 'SRB, OSAT, PEF, GIS', opiekun: 'Kuba Plachta', media: null },
     { id: 1, nazwa: 'PIU-EMP@TIA', opiekun: 'Kuba Karmański', media: null },
     { id: 2, nazwa: 'CSIZS, WUZETEM', opiekun: 'Przemek Kubisa', media: null },
-    { id: 3, nazwa: 'CLUIID, ALK(ePromotor)', opiekun: 'Zbyszek Szot', media: null },
-    { id: 4, nazwa: 'WORTAL PSZ', opiekun: 'Rafał Grzelec', media: null },
-    { id: 5, nazwa: 'KDR, EESSI', opiekun: 'Staszek Sobas', media: null },
-    { id: 6, nazwa: 'RZ', opiekun: 'Kasia Frank', media: null },
-    { id: 7, nazwa: 'CITY OF REYKJAVIK, BROKER SI PSZ', opiekun: 'Michał Tęcza', media: null },
-    { id: 8, nazwa: 'SOF', opiekun: 'Angelika Świacka', media: null }
+    // { id: 3, nazwa: 'CLUIID, ALK(ePromotor)', opiekun: 'Zbyszek Szot', media: null },
+    { id: 3, nazwa: 'WORTAL PSZ', opiekun: 'Rafał Grzelec', media: null },
+    { id: 4, nazwa: 'KDR, EESSI', opiekun: 'Staszek Sobas', media: null },
+    { id: 5, nazwa: 'RZ', opiekun: 'Kasia Frank', media: null },
+    { id: 6, nazwa: 'CITY OF REYKJAVIK, BROKER SI PSZ(presales)', opiekun: 'Michał Tęcza', media: null },
+    { id: 7, nazwa: 'SOF', opiekun: 'Angelika Świacka', media: null }
   ]
 
   uzyte: number[] = [];
