@@ -38,8 +38,7 @@ export class AppComponent implements OnInit {
     { id: 6, nazwa: 'CITY OF REYKJAVIK, BROKER', opiekun: 'Michał Tęcza', media: null },
     { id: 7, nazwa: 'SOF', opiekun: 'Angelika Świacka', media: null },
     { id: 8, nazwa: 'SRB', opiekun: 'Kamil Błoński', media: null },
-    { id: 9, nazwa: 'OSAT', opiekun: 'Kamil Susek', media: null },
-    { id: 10, nazwa: 'CZĘŚĆ INSPIRUJĄCO/MOTYWACYJNA', opiekun: 'Zbyszek Szot', media: null },
+    { id: 9, nazwa: 'OSAT', opiekun: 'Kamil Susek', media: null }
   ]
 
   uzyte: number[] = [];
