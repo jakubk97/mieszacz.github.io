@@ -39,9 +39,7 @@ export class AppComponent implements OnInit {
     { id: 7, nazwa: 'OSAT', opiekun: 'Kamil Susek', media: null },
     { id: 8, nazwa: 'ZDM', opiekun: 'Michał Pocheć', media: null },
     { id: 9, nazwa: 'UMK, SIO', opiekun: 'Piotr Adamczyk', media: null },
-    { id: 10, nazwa: 'NFZ CRM', opiekun: 'Sebastian Nawrocki', media: null },
-    { id: 11, nazwa: 'CITY OF REYKJAVIK', opiekun: 'Arek Świtała', media: null }
-    // { id: 7, nazwa: 'SRB', opiekun: 'Kamil Błoński', media: null },
+    { id: 10, nazwa: 'NFZ CRM', opiekun: 'Sebastian Nawrocki', media: null }
   ]
 
   uzyte: number[] = [];
