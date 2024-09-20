@@ -31,15 +31,14 @@ export class AppComponent implements OnInit {
   PROJEKTY: Projekt[] = [
     { id: 0, nazwa: 'PEF, GIS', opiekun: 'Kuba Plachta', media: null },
     { id: 1, nazwa: 'PIU-EMP@TIA, RZ', opiekun: 'Kuba Karmański', media: null },
-    { id: 2, nazwa: 'CSIZS, WUZETEM', opiekun: 'Przemek Kubisa', media: null },
+    { id: 2, nazwa: 'CSIZS', opiekun: 'Przemek Kubisa', media: null },
     { id: 3, nazwa: 'WORTAL PSZ', opiekun: 'Rafał Grzelec', media: null },
     { id: 4, nazwa: 'KDR', opiekun: 'Staszek Sobas', media: null },
     { id: 5, nazwa: 'BROKER', opiekun: 'Michał Tęcza', media: null },
     { id: 6, nazwa: 'SOF', opiekun: 'Angelika Świacka', media: null },
-    { id: 7, nazwa: 'OSAT', opiekun: 'Kamil Susek', media: null },
-    { id: 8, nazwa: 'ZDM', opiekun: 'Michał Pocheć', media: null },
-    { id: 9, nazwa: 'UMK, SIO', opiekun: 'Piotr Adamczyk', media: null },
-    { id: 10, nazwa: 'NFZ CRM', opiekun: 'Sebastian Nawrocki', media: null }
+    { id: 7, nazwa: 'ZDM', opiekun: 'Michał Pocheć', media: null },
+    { id: 8, nazwa: 'UMK, SIO', opiekun: 'Piotr Adamczyk', media: null },
+    { id: 9, nazwa: 'NFZ CRM', opiekun: 'Sebastian Nawrocki', media: null }
   ]
 
   uzyte: number[] = [];
