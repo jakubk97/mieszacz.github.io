@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
     { id: 2, nazwa: 'CSIZS', opiekun: 'Przemek Kubisa', media: null },
     { id: 3, nazwa: 'WORTAL PSZ', opiekun: 'Rafał Grzelec', media: null },
     { id: 4, nazwa: 'KDR', opiekun: 'Staszek Sobas', media: null },
-    { id: 5, nazwa: 'BROKER', opiekun: 'Michał Tęcza', media: null },
+    { id: 5, nazwa: 'BROKER', opiekun: 'Przemek Chlebek', media: null },
     { id: 6, nazwa: 'SOF', opiekun: 'Angelika Świacka', media: null },
     { id: 7, nazwa: 'ZDM', opiekun: 'Michał Pocheć', media: null },
     { id: 8, nazwa: 'UMK, SIO', opiekun: 'Piotr Adamczyk', media: null },
