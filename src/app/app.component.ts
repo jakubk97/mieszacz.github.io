@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   wartoscWyswietlana!: Projekt;
 
   PROJEKTY: Projekt[] = [
-    { id: 0, nazwa: 'PEF, GIS, sam francisco ai one and onyly partner llamaindex sillicon valley llm chargpt deepreseaech ciasteczka Mamy Bożeny', opiekun: 'Kuba Plachta', media: '../assets/Kuba.jpg' },
+    { id: 0, nazwa: 'PEF, GIS', opiekun: 'Kuba Plachta', media: null },
     { id: 1, nazwa: 'PIU-EMP@TIA, RZ', opiekun: 'Kuba Karmański', media: null },
     { id: 2, nazwa: 'CSIZS', opiekun: 'Przemek Kubisa', media: null },
     { id: 3, nazwa: 'WORTAL PSZ', opiekun: 'Rafał Grzelec', media: null },
