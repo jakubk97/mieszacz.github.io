@@ -37,9 +37,9 @@ export class AppComponent implements OnInit {
     { id: 5, nazwa: 'BROKER', opiekun: 'Przemek Chlebek', media: null },
     { id: 6, nazwa: 'SOF', opiekun: 'Angelika Świacka', media: null },
     { id: 7, nazwa: 'ZDM', opiekun: 'Michał Pocheć', media: null },
-    { id: 8, nazwa: 'UMK, SIO', opiekun: 'Piotr Adamczyk', media: null },
+    { id: 8, nazwa: 'SIO', opiekun: 'Piotr Adamczyk', media: null },
     { id: 9, nazwa: 'NFZ CRM', opiekun: 'Sebastian Nawrocki', media: null },
-    { id: 10, nazwa: 'PFRON WSO2', opiekun: 'Konrad Balbuza', media: null },
+    { id: 10, nazwa: 'PFRON WSO2, UMK', opiekun: 'Konrad Balbuza', media: null },
     { id: 11, nazwa: 'projekty AI', opiekun: 'Adam Marszowski', media: null }
   ]
 
