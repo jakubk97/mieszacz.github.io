@@ -29,10 +29,10 @@ export class AppComponent implements OnInit {
   wartoscWyswietlana!: Projekt;
 
   PROJEKTY: Projekt[] = [
-    { id: 0, nazwa: 'PEF, GIS, Repacking Line', opiekun: 'Kuba Plachta', media: null },
-    { id: 1, nazwa: 'PIU-EMP@TIA, RZ, OSOZ2', opiekun: 'Kuba Karmański', media: null },
+    { id: 0, nazwa: 'PEF, GIS', opiekun: 'Kuba Plachta', media: null },
+    { id: 1, nazwa: 'PIU-EMP@TIA, RZ', opiekun: 'Kuba Karmański', media: null },
     { id: 2, nazwa: 'CSIZS', opiekun: 'Przemek Kubisa', media: null },
-    { id: 3, nazwa: 'WORTAL PSZ', opiekun: 'Rafał Grzelec', media: null },
+    { id: 3, nazwa: 'WORTAL PSZ, OSOZ2', opiekun: 'Rafał Grzelec', media: null },
     { id: 4, nazwa: 'KDR', opiekun: 'Staszek Sobas', media: null },
     { id: 5, nazwa: 'BROKER', opiekun: 'Przemek Chlebek', media: null },
     { id: 6, nazwa: 'SOF', opiekun: 'Angelika Świacka', media: null },
